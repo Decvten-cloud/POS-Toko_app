@@ -8,17 +8,39 @@ A modern **Flutter Point of Sale (POS)** application built for small shops and *
 
 ## 📱 Preview
 
-| Cashier | Shopping Cart |
-|---------|---------------|
-| ![](screenshots/cashier.jpeg) | ![](screenshots/cart.jpeg) |
+<p align="center">
+  <img src="screenshots/cashier.jpeg" alt="Cashier" width="260"/>
+  <img src="screenshots/cart.jpeg" alt="Shopping Cart" width="260"/>
+</p>
 
-| Payment Method | QRIS Payment |
-|---------------|--------------|
-| ![](screenshots/payment-method.jpeg) | ![](screenshots/qris-payment.jpeg) |
+<p align="center">
+  <b>Cashier</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Shopping Cart</b>
+</p>
 
-| Products | Dashboard |
-|----------|-----------|
-| ![](screenshots/products.jpeg) | ![](screenshots/dashboard.jpeg) |
+<br>
+
+<p align="center">
+  <img src="screenshots/payment-method.jpeg" alt="Payment Method" width="260"/>
+  <img src="screenshots/qris-payment.jpeg" alt="QRIS Payment" width="260"/>
+</p>
+
+<p align="center">
+  <b>Payment Method</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>QRIS Payment</b>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="screenshots/products.jpeg" alt="Products" width="260"/>
+  <img src="screenshots/dashboard.jpeg" alt="Dashboard" width="260"/>
+</p>
+
+<p align="center">
+  <b>Products</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Dashboard</b>
+</p>
 
 ---
 

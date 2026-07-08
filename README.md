@@ -8,17 +8,9 @@ A modern **Flutter Point of Sale (POS)** application built for small shops and *
 
 ## 📱 Preview
 
-| Cashier | Cart |
-|---------|------|
-| ![Cashier](screenshots/cashier.jpeg?raw=true&s=80) | ![Cart](screenshots/cart.jpeg?raw=true&s=80) |
+<img src="screenshots/cashier.jpeg" width="140"/> <img src="screenshots/cart.jpeg" width="140"/> <img src="screenshots/payment-method.jpeg" width="140"/>
 
-| Payment | QRIS |
-|---------|------|
-| ![Payment](screenshots/payment-method.jpeg?raw=true&s=80) | ![QRIS](screenshots/qris-payment.jpeg?raw=true&s=80) |
-
-| Products | Dashboard |
-|----------|-----------|
-| ![Products](screenshots/products.jpeg?raw=true&s=80) | ![Dashboard](screenshots/dashboard.jpeg?raw=true&s=80) |
+<img src="screenshots/qris-payment.jpeg" width="140"/> <img src="screenshots/products.jpeg" width="140"/> <img src="screenshots/dashboard.jpeg" width="140"/>
 
 ---
 

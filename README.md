@@ -1,61 +1,82 @@
 # 🛒 Toko App
 
-A **Flutter-based Point of Sale (POS)** application designed for small shops and *warung*. The app helps store owners manage products, process sales, record customer debts, and monitor daily business performance—all with **offline local storage using SQLite**.
+A modern **Flutter Point of Sale (POS)** application built for small shops and *warung*. The application allows shop owners to manage inventory, process sales, monitor profits, and track customer debts completely **offline** using SQLite.
+
+> **Built with Flutter + Provider + SQLite**
 
 ---
 
-## ✨ Features
+## 📱 Preview
 
-### 🛍️ Cashier
+| Cashier | Shopping Cart |
+|---------|---------------|
+| ![](screenshots/cashier.png) | ![](screenshots/cart.png) |
 
-* Browse available products
-* Search products instantly
-* Category filtering
-* Shopping cart with quantity management
-* Cash and QRIS payment support
-* Automatic stock validation before checkout
+| Payment Method | QRIS Payment |
+|---------------|--------------|
+| ![](screenshots/payment-method.png) | ![](screenshots/qris-payment.png) |
 
-### 📦 Product Management
+| Products | Dashboard |
+|----------|-----------|
+| ![](screenshots/products.png) | ![](screenshots/dashboard.png) |
 
-* Add, edit, and delete products
-* Restock inventory
-* Product image support
-* Configure QRIS payment image
-* Category and unit management
+---
 
-### 📊 Sales Summary
+# ✨ Features
 
-* Today's revenue
-* Profit calculation
-* Transaction count
-* Low-stock product monitoring
+### 🛒 Cashier
+
+- Browse products
+- Product search
+- Category filtering
+- Shopping cart
+- Quantity adjustment
+- Stock validation
+- Cash payment
+- QRIS payment
+
+---
+
+### 📦 Inventory Management
+
+- Add new products
+- Edit products
+- Delete products
+- Restock inventory
+- Product image support
+- QRIS image configuration
+
+---
+
+### 📊 Sales Dashboard
+
+Track business performance with:
+
+- Today's Revenue
+- Today's Profit
+- Total Transactions
+- Low Stock Monitoring
+
+---
 
 ### 💳 Debt Management
 
-* Record customer debts
-* Mark debts as paid or unpaid
-* Delete debt records
-
----
-
-# 📱 Screens
-
-| Feature  | Description                                   |
-| -------- | --------------------------------------------- |
-| Cashier  | Process sales using a shopping cart interface |
-| Products | Manage inventory and product information      |
-| Summary  | View daily sales statistics and profits       |
-| Debts    | Track customer debts and payment status       |
+- Record customer debts
+- Mark debts as paid
+- Mark debts as unpaid
+- Delete debt records
 
 ---
 
 # 🏗️ Tech Stack
 
-* **Flutter**
-* **Provider** (State Management)
-* **SQLite (sqflite)**
-* **Path Provider**
-* **Image Picker**
+| Technology | Purpose |
+|------------|---------|
+| Flutter | Cross-platform UI |
+| Provider | State Management |
+| SQLite | Local Database |
+| image_picker | Product Images |
+| path_provider | Local Storage |
 
 ---
 
@@ -65,115 +86,61 @@ A **Flutter-based Point of Sale (POS)** application designed for small shops and
 lib/
 │
 ├── database/
-│   └── database_helper.dart
-│
 ├── models/
-│   ├── product.dart
-│   ├── cart_item.dart
-│   └── debt.dart
-│
 ├── providers/
-│   ├── product_provider.dart
-│   ├── cart_provider.dart
-│   └── debt_provider.dart
-│
 ├── screens/
-│   ├── cashier/
-│   ├── products/
-│   ├── summary/
-│   └── debts/
-│
+├── widgets/
 └── main.dart
 ```
 
 ---
 
-# ⚙️ Architecture
-
-The application follows a simple layered architecture:
+# 🧠 Architecture
 
 ```
-UI (Screens)
+Flutter UI
       │
       ▼
-Providers (Business Logic)
+Provider
+(Business Logic)
       │
       ▼
-SQLite Database
-      │
-      ▼
-Local Device Storage
+SQLite
+(Local Storage)
 ```
-
-### State Management
-
-The application uses **Provider** for state management.
-
-| Provider        | Responsibility                               |
-| --------------- | -------------------------------------------- |
-| ProductProvider | Product CRUD, stock updates, checkout, sales |
-| CartProvider    | Shopping cart management                     |
-| DebtProvider    | Customer debt management                     |
 
 ---
 
-# 🗄️ Database
+# 🗄 Database
 
-SQLite is used for persistent local storage.
+The application stores data locally using SQLite.
 
-### Tables
+Tables:
 
-* `products`
-* `transactions`
-* `transaction_items`
-* `debts`
+- Products
+- Transactions
+- Transaction Items
+- Debts
 
-The database stores products, transaction history, and customer debt records even after the application is closed.
-
----
-
-# 📦 Dependencies
-
-| Package         | Purpose                        |
-| --------------- | ------------------------------ |
-| provider        | State management               |
-| sqflite         | Local SQLite database          |
-| path            | File path utilities            |
-| path_provider   | Access application directories |
-| image_picker    | Select product and QRIS images |
-| cupertino_icons | iOS icons                      |
+No internet connection is required.
 
 ---
 
 # 🚀 Getting Started
 
-## Prerequisites
-
-* Flutter SDK installed
-* Android Studio or VS Code
-* Android Emulator or physical device
-
-## Installation
-
-Clone the repository:
+Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/toko-app.git
 ```
 
-Navigate to the project:
-
-```bash
-cd toko-app
-```
-
-Install dependencies:
+Install dependencies
 
 ```bash
 flutter pub get
 ```
 
-Run the application:
+Run the application
 
 ```bash
 flutter run
@@ -181,29 +148,42 @@ flutter run
 
 ---
 
-# 📌 Notes
+# 📦 Packages
 
-* Works completely **offline**
-* Uses **SQLite** for local data persistence
-* Product and QRIS images are stored inside the application's document directory
-* Stock is automatically validated before completing a checkout
-* Daily sales summaries are generated directly from transaction records
+- provider
+- sqflite
+- image_picker
+- path_provider
+- path
+- cupertino_icons
+
+---
+
+# 🎯 Highlights
+
+- ✅ Offline First
+- ✅ SQLite Database
+- ✅ Provider State Management
+- ✅ QRIS Payment Support
+- ✅ Inventory Management
+- ✅ Sales Dashboard
+- ✅ Profit Calculation
+- ✅ Customer Debt Tracking
 
 ---
 
 # 🚧 Future Improvements
 
-* Receipt printing
-* Export sales reports (PDF/Excel)
-* Sales history page
-* Barcode/QR code scanning
-* Multi-user authentication
-* Cloud synchronization
-* Backup & restore database
-* Dark mode
+- Barcode Scanner
+- Receipt Printing
+- PDF / Excel Export
+- Sales History
+- Monthly Reports
+- Cloud Backup
+- Multi-user Authentication
 
 ---
 
 # 📄 License
 
-This project is intended for educational and portfolio purposes.
+This project was developed as a portfolio and educational project.
